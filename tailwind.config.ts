@@ -31,10 +31,6 @@ const config: Config = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -43,75 +39,12 @@ const config: Config = {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        // New color palette
-        olivine: {
-          DEFAULT: '#89AF72',
-          100: '#1b2515',
-          200: '#364a2a',
-          300: '#52703f',
-          400: '#6d9554',
-          500: '#89af72',
-          600: '#a2c08f',
-          700: '#b9d0ab',
-          800: '#d0dfc7',
-          900: '#e8efe3'
-        },
-        'fern-green': {
-          DEFAULT: '#547D52',
-          100: '#111911',
-          200: '#223321',
-          300: '#334c32',
-          400: '#446542',
-          500: '#547d52',
-          600: '#70a06d',
-          700: '#94b892',
-          800: '#b7cfb6',
-          900: '#dbe7db'
-        },
-        asparagus: {
-          DEFAULT: '#679961',
-          100: '#151e13',
-          200: '#293d27',
-          300: '#3e5b3a',
-          400: '#527a4e',
-          500: '#679961',
-          600: '#85ae80',
-          700: '#a3c2a0',
-          800: '#c2d6c0',
-          900: '#e0ebdf'
-        },
-        'tea-green': {
-          DEFAULT: '#BFD6A6',
-          100: '#273418',
-          200: '#4d6930',
-          300: '#749d48',
-          400: '#9abf73',
-          500: '#bfd6a6',
-          600: '#cddfb9',
-          700: '#d9e7cb',
-          800: '#e6efdc',
-          900: '#f2f7ee'
-        },
-        'olivine-2': {
-          DEFAULT: '#A0B96C',
-          100: '#212713',
-          200: '#424e26',
-          300: '#627639',
-          400: '#839d4c',
-          500: '#a0b96c',
-          600: '#b3c689',
-          700: '#c6d4a6',
-          800: '#d9e2c4',
-          900: '#ecf1e1'
-        }
+        // Custom colors
+        'brown-dark': '#987048',
+        'brown-medium': '#A07D5C',
+        'sage': '#89AF72',
+        'sage-light': '#BFD6A6',
+        'cream': '#F5F5DC',
       },
       borderRadius: {
         lg: "var(--radius)",
