@@ -11,16 +11,20 @@
 
 @font-face {
   font-family: 'Bouncy';
-  src: url('/fonts/Bouncy.otf') format('opentype');
+  src: url('../public/fonts/Bouncy.otf') format('opentype'),
+       url('/fonts/Bouncy.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Atma-Light';
-  src: url('/fonts/Atma-Light.ttf') format('truetype');
+  src: url('../public/fonts/Atma-Light.ttf') format('truetype'),
+       url('/fonts/Atma-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 .title-color {
