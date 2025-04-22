@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Melon Camp';
+  src: url('/fonts/Melon Camp.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bouncy';
+  src: url('/fonts/Bouncy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Atma-Light';
+  src: url('/fonts/Atma-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.title-color {
+  color: #987048;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+:root {
+  --background: 97 28% 95%;
+  --foreground: 54 89% 90%;
+  --card: 97 28% 95%;
+  --card-foreground: 54 89% 90%;
+  --popover: 97 28% 95%;
+  --popover-foreground: 54 89% 90%;
+  --primary: 89 22% 84%;
+  --primary-foreground: 117 21% 36%;
+  --secondary: 79 42% 73%;
+  --secondary-foreground: 97 28% 95%;
+  --muted: 114 22% 49%;
+  --muted-foreground: 97 28% 95%;
+  --accent: 79 42% 73%;
+  --accent-foreground: 97 28% 95%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 97 28% 95%;
+  --border: 114 22% 49%;
+  --input: 114 22% 49%;
+  --ring: 89 22% 84%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 117 21% 36%;
+  --foreground: 54 89% 90%;
+  --card: 114 22% 49%;
+  --card-foreground: 54 89% 90%;
+  --popover: 117 21% 36%;
+  --popover-foreground: 54 89% 90%;
+  --primary: 89 22% 84%;
+  --primary-foreground: 117 21% 36%;
+  --secondary: 79 42% 73%;
+  --secondary-foreground: 97 28% 95%;
+  --muted: 114 22% 49%;
+  --muted-foreground: 89 22% 84%;
+  --accent: 89 22% 84%;
+  --accent-foreground: 117 21% 36%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 97 28% 95%;
+  --border: 114 22% 49%;
+  --input: 114 22% 49%;
+  --ring: 89 22% 84%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
