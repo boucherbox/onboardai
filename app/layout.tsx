@@ -3,8 +3,19 @@ import "@/app/globals.css"
 import { Inter } from "next/font/google"
 import Link from "next/link"
 import { ThemeProvider } from "@/components/theme-provider"
+import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ["latin"] })
+
+const bouncy = localFont({ 
+  src: '../public/fonts/Bouncy.otf',
+  variable: '--font-bouncy'
+})
+
+const atmaLight = localFont({ 
+  src: '../public/fonts/Atma-Light.ttf',
+  variable: '--font-atma-light'
+})
 
 export const metadata: Metadata = {
   title: "Obi",
@@ -27,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${bouncy.variable} ${atmaLight.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <div className="flex min-h-screen flex-col">
             <div className="flex-1">{children}</div>
