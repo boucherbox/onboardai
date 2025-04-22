@@ -8,12 +8,12 @@ import localFont from 'next/font/local'
 const inter = Inter({ subsets: ["latin"] })
 
 const bouncy = localFont({ 
-  src: '../public/fonts/Bouncy.otf',
+  src: './fonts/Bouncy.otf',
   variable: '--font-bouncy'
 })
 
 const atmaLight = localFont({ 
-  src: '../public/fonts/Atma-Light.ttf',
+  src: './fonts/Atma-Light.ttf',
   variable: '--font-atma-light'
 })
 
@@ -39,7 +39,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} ${bouncy.variable} ${atmaLight.variable}`}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider 
+          attribute="class" 
+          defaultTheme="dark" 
+          enableSystem
+          themes={['light', 'dark']}
+        >
           <div className="flex min-h-screen flex-col">
             <div className="flex-1">{children}</div>
             <footer className="w-full py-12 md:py-24 lg:py-32 bg-[#679961]">
